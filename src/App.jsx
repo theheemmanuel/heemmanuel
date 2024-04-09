@@ -19,9 +19,9 @@ function App() {
     <div className={darker ? "" : "dark"}>
       <div id="mainbody" className="dark:bg-zinc-700 dark:text-white">
         <div>
-          <div className="reddit flex items-center justify-between max-wid p-6">
+          <div className="font-mono flex items-center justify-between max-wid p-6">
             <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
-              Ty0
+              &y0
             </div>
             <div>
               <ul className="md:flex gap-4 font-bold hidden">
@@ -52,7 +52,7 @@ function App() {
               <ul
                 className={
                   showmenu
-                    ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[100px] bg-white dark:bg-black flex flex-col gap-6 p-6"
+                    ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6"
                     : "right-[-100px] fixed transition-all ease-in duration-100"
                 }
               >
