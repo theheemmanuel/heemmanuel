@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="items-center flex gap-6 md:flex-row flex-col">
         <div>
           <h1 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
-            Software engineer, and open-source contributor.
+            Software Developer, and open-source contributor.
           </h1>
           <p className="text-[16px] font-inter py-6">
             I am Toyin Makun, a passionate frontend developer dedicated to
@@ -24,19 +24,19 @@ const Hero = () => {
           </p>
           <div className="font-[poppins] flex gap-4 flex-wrap text-sm">
             {" "}
-            <a className="flex items-center gap-1 border-b" href="">
+            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
               <FaEnvelope /> <p>Email</p>
             </a>
-            <a className="flex items-center gap-1 border-b" href="">
+            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
               <FaGithub /> <p>Github</p>
             </a>
-            <a className="flex items-center gap-1 border-b" href="">
+            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
               <FaLinkedinIn /> <p>LinkedIn</p>
             </a>
-            <a className="flex items-center gap-1 border-b" href="">
+            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
               <FaTwitter /> <p>Twitter</p>
             </a>
-            <a className="flex items-center gap-1 border-b" href="">
+            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
               <FaInstagram /> <p>Instagram</p>
             </a>
           </div>

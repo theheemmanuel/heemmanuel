@@ -6,6 +6,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
 import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
 
 function App() {
   const [darker, setdark] = useState(true);
@@ -17,8 +18,11 @@ function App() {
     setshowmenu(!showmenu);
   };
   return (
-    <div className={darker ? "" : "dark"}>
-      <div id="mainbody" className="dark:bg-zinc-800 dark:text-white">
+    <div className={darker ? "light" : "dark"}>
+      <div
+        id="mainbody"
+        className="dark:bg-zinc-800 dark:text-white text-zinc-700"
+      >
         <div>
           <div className="font-mono flex items-center justify-between max-wid lg:px-24 p-6">
             <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
@@ -68,6 +72,7 @@ function App() {
         </div>
         <Hero />
         <Experience />
+        <Footer/>
       </div>
     </div>
   );
