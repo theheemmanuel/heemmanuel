@@ -5,6 +5,7 @@ import { CgDarkMode } from "react-icons/cg";
 import { MdOutlineLightMode } from "react-icons/md";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
+import Experience from "./Components/Experience";
 
 function App() {
   const [darker, setdark] = useState(true);
@@ -17,9 +18,9 @@ function App() {
   };
   return (
     <div className={darker ? "" : "dark"}>
-      <div id="mainbody" className="dark:bg-zinc-700 dark:text-white">
+      <div id="mainbody" className="dark:bg-zinc-800 dark:text-white">
         <div>
-          <div className="font-mono flex items-center justify-between max-wid p-6">
+          <div className="font-mono flex items-center justify-between max-wid lg:px-24 p-6">
             <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
               &y0
             </div>
@@ -44,7 +45,7 @@ function App() {
               </button>{" "}
               <div onClick={menubar} className="border-2 md:hidden block">
                 {showmenu ? (
-                  <MdCancel size={30} />
+                  <MdCancel size={30} color="" />
                 ) : (
                   <BiMenuAltRight size={30} />
                 )}
@@ -52,7 +53,7 @@ function App() {
               <ul
                 className={
                   showmenu
-                    ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6"
+                    ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6 z-10"
                     : "right-[-100px] fixed transition-all ease-in duration-100"
                 }
               >
@@ -63,9 +64,10 @@ function App() {
               </ul>
             </div>
           </div>
-          <p className="bg-white w-[100%] h-[0.5px]"></p>
+          <p className="bg-zinc-600 dark:bg-zinc-400 w-[100%] h-[0.5px]"></p>
         </div>
         <Hero />
+        <Experience />
       </div>
     </div>
   );
