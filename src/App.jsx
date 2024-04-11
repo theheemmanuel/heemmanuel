@@ -1,12 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Hero from "./Components/Hero";
 import { CgDarkMode } from "react-icons/cg";
 import { MdOutlineLightMode } from "react-icons/md";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdCancel } from "react-icons/md";
-import Experience from "./Components/Experience";
-import Footer from "./Components/Footer";
+import Footer from "./Pages/Footer";
+import { NavLink, Outlet } from "react-router-dom";
 
 function App() {
   const [darker, setdark] = useState(true);
@@ -25,15 +24,45 @@ function App() {
       >
         <div>
           <div className="font-mono flex items-center justify-between max-wid lg:px-24 p-6">
-            <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
-              &y0
-            </div>
+            <NavLink to="/">
+              <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
+                &y0
+              </div>
+            </NavLink>
             <div>
               <ul className="md:flex gap-4 font-bold hidden">
-                <li role="button">About</li>
-                <li role="button">Projects</li>
-                <li role="button">Contact</li>
-                <li role="button">Photos</li>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "border-b-2 border-zinc-500" : ""
+                  }
+                  to="/about"
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "border-b-2 border-zinc-500" : ""
+                  }
+                  to="/projects"
+                >
+                  Projects
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "border-b-2 border-zinc-500" : ""
+                  }
+                  to="/contact"
+                >
+                  Contact
+                </NavLink>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "border-b-2 border-zinc-500" : ""
+                  }
+                  to="/photos"
+                >
+                  Photos
+                </NavLink>
               </ul>
             </div>
             <div className="flex gap-6 items-center">
@@ -58,21 +87,28 @@ function App() {
                 className={
                   showmenu
                     ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6 z-10"
-                    : "right-[-100px] fixed transition-all ease-in duration-100"
+                    : "right-[-100%] fixed transition-all ease-in duration-100"
                 }
               >
-                <li role="button">About</li>
-                <li role="button">Projects</li>
-                <li role="button">Contact</li>
-                <li role="button">Photos</li>
+                <NavLink onClick={() => setshowmenu(!showmenu)} to="about">
+                  About
+                </NavLink>
+                <NavLink onClick={() => setshowmenu(!showmenu)} to="projects">
+                  Projects
+                </NavLink>
+                <NavLink onClick={() => setshowmenu(!showmenu)} to="contact">
+                  Contact
+                </NavLink>
+                <NavLink onClick={() => setshowmenu(!showmenu)} to="photos">
+                  Photos
+                </NavLink>
               </ul>
             </div>
           </div>
           <p className="bg-zinc-600 dark:bg-zinc-400 w-[100%] h-[0.5px]"></p>
         </div>
-        <Hero />
-        <Experience />
-        <Footer/>
+        <Outlet />
+        <Footer />
       </div>
     </div>
   );
