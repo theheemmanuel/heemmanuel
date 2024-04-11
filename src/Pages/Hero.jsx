@@ -16,27 +16,41 @@ const Hero = () => {
             Software Developer, and open-source contributor.
           </h1>
           <p className="text-[16px] font-inter py-6">
-            I am Toyin Makun, a passionate frontend developer dedicated to
-            crafting user friendly websites. Skilled in team communication, user
-            interface perfection, proactivity and problem-solving. I thrive on
-            delivering outstanding work and continuously seeking innovative
-            solutions to deliver outstanding result to clients.
+            I am Emmanuel Oladiran, an experienced software developer passionate
+            about learning and dedicated to crafting user-friendly,
+            user-engaging, and visually appealing web interfaces that elevate
+            the online world...
           </p>
           <div className="font-[poppins] flex gap-4 flex-wrap text-sm">
             {" "}
-            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
+            <a
+              className="flex items-center border-zinc-500 gap-1 border-b"
+              href=""
+            >
               <FaEnvelope /> <p>Email</p>
             </a>
-            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
+            <a
+              className="flex items-center border-zinc-500 gap-1 border-b"
+              href=""
+            >
               <FaGithub /> <p>Github</p>
             </a>
-            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
+            <a
+              className="flex items-center border-zinc-500 gap-1 border-b"
+              href=""
+            >
               <FaLinkedinIn /> <p>LinkedIn</p>
             </a>
-            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
+            <a
+              className="flex items-center border-zinc-500 gap-1 border-b"
+              href=""
+            >
               <FaTwitter /> <p>Twitter</p>
             </a>
-            <a className="flex items-center border-zinc-500 gap-1 border-b" href="">
+            <a
+              className="flex items-center border-zinc-500 gap-1 border-b"
+              href=""
+            >
               <FaInstagram /> <p>Instagram</p>
             </a>
           </div>

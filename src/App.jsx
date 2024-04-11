@@ -23,7 +23,7 @@ function App() {
         className="dark:bg-zinc-800 dark:text-white text-zinc-700"
       >
         <div>
-          <div className="font-mono flex items-center justify-between max-wid lg:px-24 p-6">
+          <div className="relative font-mono flex items-center justify-between max-wid lg:px-24 p-6">
             <NavLink to="/">
               <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
                 &y0
@@ -86,8 +86,8 @@ function App() {
               <ul
                 className={
                   showmenu
-                    ? "transition-all ease-in duration-400 md:hidden font-bold fixed top-0 right-0 h-[100vh] w-[100%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6 z-10"
-                    : "right-[-100%] fixed transition-all ease-in duration-100"
+                    ? "md:hidden font-bold absolute top-0 right-0 rounded-xl w-[40%] mt-[80px] bg-white dark:bg-black flex flex-col gap-6 p-6 z-10"
+                    : "right-[-1000px] fixed"
                 }
               >
                 <NavLink onClick={() => setshowmenu(!showmenu)} to="about">

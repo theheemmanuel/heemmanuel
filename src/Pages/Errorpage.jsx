@@ -5,7 +5,7 @@ const Errorpage = () => {
   return (
     <div>
       <div>
-        <i>Page not found</i>
+        <i>Ops, there is an error</i>
         <p>{error.statusText || error.message}</p>{" "}
       </div>
     </div>
