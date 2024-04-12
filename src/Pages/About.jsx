@@ -1,12 +1,13 @@
 import pic from "../assets/me.jpg";
 const About = () => {
   return (
-    <div className="max-wid font-inter lg:px-24 md:p-12 p-6">
+    <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <div>
         <div className="flex gap-6 flex-col-reverse lg:flex-row">
-          <div>
+          <div className="">
             <h1 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
-              I am Victor Eke. I live in Lagos, where I build the future.
+              I am Toyin Makun, a Software Developer and I live in Abuja,
+              Nigeria.
             </h1>
             <p className="my-6">
               I am a self-driven, career-oriented software developer

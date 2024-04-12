@@ -9,7 +9,7 @@ import {
 // import {} from "react-icons/fa";
 const Hero = () => {
   return (
-    <div className="max-wid lg:px-24 py-12 text-zinc-600 dark:text-zinc-400">
+    <div className="max-wid py-12 text-zinc-600 dark:text-zinc-400">
       <div className="items-center flex gap-6 md:flex-row flex-col">
         <div>
           <h1 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="md:min-w-[40%] flex justify-center">
-          <img className="opacity-[0.5]" src={brick} alt="" />
+          <img className="opacity-[0.7]" src={brick} alt="" />
         </div>
       </div>
     </div>

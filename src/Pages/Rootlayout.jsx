@@ -7,7 +7,7 @@ function Rootlayout() {
     <div className="">
       <div
         id="mainbody"
-        className="dark:bg-zinc-800 dark:text-white text-zinc-700"
+        className="dark:bg-zinc-900 dark:text-white text-zinc-700"
       >
         <Navbar />
         <Outlet />

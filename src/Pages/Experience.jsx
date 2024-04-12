@@ -1,7 +1,7 @@
 import etc from "../assets/blueLogo.png";
 const Experience = () => {
   return (
-    <div className="max-wid lg:px-24 py-12 text-zinc-600 dark:text-zinc-400">
+    <div className="max-wid py-12 text-zinc-600 dark:text-zinc-400">
       <h1 className="font-andika font-bold text-2xl sm:text-3xl text-black dark:text-white">
         Work Experience
       </h1>
@@ -13,7 +13,7 @@ const Experience = () => {
               src={etc}
               alt=""
             />
-            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[150px]"></p>
+            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[170px]"></p>
           </div>
           <div>
             <a
@@ -41,7 +41,7 @@ const Experience = () => {
               src={etc}
               alt=""
             />
-            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[150px]"></p>
+            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[170px]"></p>
           </div>
           <div>
             <a
@@ -69,7 +69,7 @@ const Experience = () => {
               src={etc}
               alt=""
             />
-            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[150px]"></p>
+            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[170px]"></p>
           </div>
           <div>
             <a
@@ -97,7 +97,7 @@ const Experience = () => {
               src={etc}
               alt=""
             />
-            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[150px]"></p>
+            <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[170px]"></p>
           </div>
           <div>
             <a
