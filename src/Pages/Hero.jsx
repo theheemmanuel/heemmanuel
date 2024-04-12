@@ -55,7 +55,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="md:min-w-[40%] flex justify-center">
+        <div className="md:min-w-[40%] flex justify-center dark:bg-zinc-300">
           <img className="opacity-[0.7]" src={brick} alt="" />
         </div>
       </div>
