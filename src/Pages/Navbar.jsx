@@ -1,8 +1,10 @@
 import { useState } from "react";
-import { CgDarkMode } from "react-icons/cg";
-import { MdOutlineLightMode } from "react-icons/md";
-import { BiMenuAltRight } from "react-icons/bi";
-import { MdCancel } from "react-icons/md";
+import {
+  CgDarkMode,
+  MdOutlineLightMode,
+  MdCancel,
+  BiMenuAltRight,
+} from "../Pages/Icons";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [darker, setdark] = useState(true);
