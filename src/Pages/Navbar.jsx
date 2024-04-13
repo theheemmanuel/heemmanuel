@@ -42,7 +42,7 @@ const Navbar = () => {
             >
               Projects
             </NavLink>
-            {/* <NavLink
+            <NavLink
               className={({ isActive }) =>
                 isActive ? "border-b-2 border-zinc-500" : ""
               }
@@ -50,7 +50,7 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) =>
                 isActive ? "border-b-2 border-zinc-500" : ""
               }
@@ -88,12 +88,12 @@ const Navbar = () => {
             <NavLink onClick={() => setshowmenu(!showmenu)} to="projects">
               Projects
             </NavLink>
-            {/* <NavLink onClick={() => setshowmenu(!showmenu)} to="contact">
+            <NavLink onClick={() => setshowmenu(!showmenu)} to="contact">
               Contact
             </NavLink>
-            <NavLink onClick={() => setshowmenu(!showmenu)} to="photos">
+            {/* <NavLink onClick={() => setshowmenu(!showmenu)} to="photos">
               Photos
-            </NavLink> */}
+            </NavLink>  */}
           </ul>
         </div>
       </div>
