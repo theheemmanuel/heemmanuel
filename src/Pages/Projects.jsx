@@ -14,7 +14,43 @@ const Projects = () => {
             code and contribute if you have ideas on how it can be improved.
           </p>
         </div>
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+        <div className="pb-24 pt-12 grid md:grid-cols-2 grid-cols-1 gap-6">
+          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
+            <img src="" alt="" />
+            <div>
+              <h3 className="font-semibold text-black dark:text-white text-xl">
+                Trafalgal
+              </h3>
+              <p>Healthcare Landing Page</p>
+            </div>
+          </div>
+          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
+            <img src="" alt="" />
+            <div>
+              <h3 className="font-semibold text-black dark:text-white text-xl">
+                Trafalgal
+              </h3>
+              <p>Healthcare Landing Page</p>
+            </div>
+          </div>
+          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
+            <img src="" alt="" />
+            <div>
+              <h3 className="font-semibold text-black dark:text-white text-xl">
+                Trafalgal
+              </h3>
+              <p>Healthcare Landing Page</p>
+            </div>
+          </div>
+          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
+            <img src="" alt="" />
+            <div>
+              <h3 className="font-semibold text-black dark:text-white text-xl">
+                Trafalgal
+              </h3>
+              <p>Healthcare Landing Page</p>
+            </div>
+          </div>
           <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
             <img src="" alt="" />
             <div>
