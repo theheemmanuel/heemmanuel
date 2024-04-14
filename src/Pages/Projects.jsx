@@ -8,10 +8,8 @@ const Projects = () => {
             Projects
           </h3>
           <p className="my-4 max-w-2xl">
-            I haveve worked on tons of little projects over the years but these
-            are the ones that I am most proud of. Many of them are open-source,
-            so if you see something that piques your interest, check out the
-            code and contribute if you have ideas on how it can be improved.
+            I have gained experience working on several projects and below are
+            few of the projects I have worked on.
           </p>
         </div>
         <div className="pb-24 pt-12 grid md:grid-cols-2 grid-cols-1 gap-6">

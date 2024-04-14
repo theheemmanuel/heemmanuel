@@ -11,7 +11,6 @@ const Contact = () => {
   const sendemail = (e) => {
     // setloading(true);
     e.preventDefault();
-    e.target.reset();
     emailjs
       .sendForm(
         "service_gzl5aen",
@@ -21,7 +20,7 @@ const Contact = () => {
       )
       .then((response) => {
         if (response.status === 200) {
-          // setloading(false);
+          e.target.reset();
           toast.success("Message sent Successfully", {
             theme: "colored",
             autoClose: 3000,
@@ -34,7 +33,6 @@ const Contact = () => {
         }
       })
       .catch((err) => {
-        // setloading(false);
         toast.error("Error occured:" + err.message, {
           theme: "colored",
           autoClose: 3000,
@@ -42,10 +40,10 @@ const Contact = () => {
       });
   };
   return (
-    <div className="max-wid  font-inter py-12 text-zinc-600 dark:text-zinc-400">
+    <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <AnimateOnScroll duration={2} delay={0} animation="flipIn">
         <div>
-          <ToastContainer transition={Zoom} />
+          <ToastContainer transition={Zoom} position="bottom-center" />
           <div>
             <h3 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
               Get in Touch
@@ -58,7 +56,7 @@ const Contact = () => {
               reach out to you.
             </p>
           </div>
-          <div className="flex md:flex-row flex-col gap-12 mb-24 mt-12">
+          <div className="flex md:flex-row flex-col gap-12 pb-24 mt-12">
             <div className="border-2 dark:bg-black bg-zinc-50 p-6 rounded-xl w-[100%] md:w-[40%]">
               <div className="my-8">
                 <h3 className="flex items-center gap-2 text-xl font-semibold">
@@ -80,6 +78,7 @@ const Contact = () => {
                   Call
                 </h3>
                 <p className="text-lg text-blue-500">+2347032632513</p>
+                <p className="text-lg text-blue-500">+2349138960240</p>
               </div>
             </div>
             <div className=" md:w-[60%] w-[100%] dark:bg-black bg-zinc-50 border-2 rounded-xl  p-6 ">
@@ -89,7 +88,7 @@ const Contact = () => {
                   <input
                     className="bg-transparent border-2 rounded-lg p-2"
                     required
-                    name="from_eame"
+                    name="from_name"
                     type="text"
                   />
                 </div>
@@ -111,8 +110,6 @@ const Contact = () => {
                     type="text"
                   />
                 </div>
-
-                {/* <input required name="from_name" type="text" /> */}
                 <div className="flex justify-center">
                   <button
                     className="bg-blue-500 text-black border-2 text-bold text-xl px-4 py-2 rounded-xl"

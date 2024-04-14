@@ -165,7 +165,7 @@ const About = () => {
             </div>
             <div className="flex justify-center min-w-[40%]">
               <img
-                className="rounded-2xl object-cover max-h-96"
+                className="rounded-2xl sticky top-4 object-cover max-h-96"
                 src={pic}
                 alt=""
               />
