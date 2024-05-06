@@ -21,7 +21,6 @@ const App = () => {
         { path: "/projects", element: <Projects /> },
         { path: "/contact", element: <Contact /> },
         { path: "/photos", element: <Photos /> },
-        // { path: "/toast", element: <Toast /> },
       ],
     },
   ]);
