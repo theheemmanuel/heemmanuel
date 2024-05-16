@@ -4,7 +4,7 @@ const Projects = () => {
     <div className="max-wid  font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <AnimateOnScroll duration={2} delay={0} animation="flipIn">
         <div>
-          <h3 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
+          <h3 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
             Projects
           </h3>
           <p className="my-4 max-w-2xl">

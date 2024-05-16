@@ -2,7 +2,7 @@ import etc from "../assets/blueLogo.png";
 const Experience = () => {
   return (
     <div className="max-wid py-12 text-zinc-600 dark:text-zinc-400">
-      <h1 className="font-andika font-bold text-2xl sm:text-3xl text-black dark:text-white">
+      <h1 className="font-viga font-bold text-2xl sm:text-3xl text-black dark:text-white">
         Work Experience
       </h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 py-10">
@@ -17,7 +17,7 @@ const Experience = () => {
           </div>
           <div>
             <a
-              className="text-xl font-bold"
+              className="text-xl font-bold font-viga"
               href="https://etcvibes.com"
               target="blank"
             >
@@ -45,7 +45,7 @@ const Experience = () => {
           </div>
           <div>
             <a
-              className="text-xl font-bold"
+              className="text-xl font-bold font-viga"
               href="https://etcvibes.com"
               target="blank"
             >
@@ -73,7 +73,7 @@ const Experience = () => {
           </div>
           <div>
             <a
-              className="text-xl font-bold"
+              className="text-xl font-bold font-viga"
               href="https://etcvibes.com"
               target="blank"
             >
@@ -101,7 +101,7 @@ const Experience = () => {
           </div>
           <div>
             <a
-              className="text-xl font-bold"
+              className="text-xl font-bold font-viga"
               href="https://etcvibes.com"
               target="blank"
             >

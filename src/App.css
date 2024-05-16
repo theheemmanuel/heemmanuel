@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: Viga;
+  src: url(../src/assets/Font/Viga/Viga-Regular.ttf);
+  font-weight: 700;
+}
+
 #mainbody {
   min-height: 100vh;
   background-image: url(/src/assets/bg-KhfgLdfN.png);

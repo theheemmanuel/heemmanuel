@@ -6,13 +6,12 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-// import {} from "react-icons/fa";
 const Hero = () => {
   return (
     <div className="max-wid py-12 text-zinc-600 dark:text-zinc-400">
       <div className="items-center flex gap-6 md:flex-row flex-col">
         <div>
-          <h1 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
+          <h1 className="font-bold text-black dark:text-white sm:text-4xl text-2xl font-viga">
             Software Developer, and open-source contributor.
           </h1>
           <p className="text-[16px] font-inter py-6">
@@ -21,7 +20,7 @@ const Hero = () => {
             user-engaging, and visually appealing web interfaces that elevate
             the online world...
           </p>
-          <div className="font-[poppins] flex gap-4 flex-wrap text-sm">
+          <div className="font-[monospace] flex gap-4 flex-wrap text-lg">
             {" "}
             <a
               className="flex items-center border-zinc-500 gap-1 border-b"

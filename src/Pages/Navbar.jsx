@@ -18,10 +18,10 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="relative font-mono flex items-center justify-between max-wid py-6">
+      <div className="relative font-viga flex items-center justify-between max-wid py-6">
         <NavLink to="/">
           <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
-            &y0
+            Emm
           </div>
         </NavLink>
         <div>

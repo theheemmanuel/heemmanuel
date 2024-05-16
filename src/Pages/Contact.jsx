@@ -45,7 +45,7 @@ const Contact = () => {
         <div>
           <ToastContainer transition={Zoom} position="bottom-center" />
           <div>
-            <h3 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
+            <h3 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
               Get in Touch
             </h3>
             <p className="my-4 max-w-3xl">
@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center">
                   <button
-                    className="bg-blue-500 text-black border-2 text-bold text-xl px-4 py-2 rounded-xl"
+                    className="bg-blue-500 text-white border-2 text-bold text-xl px-4 py-2 rounded-xl"
                     type="submit"
                   >
                     Submit

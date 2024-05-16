@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       andika: ["Andika", "sans-serif"],
+      viga: ["Viga"],
     },
     extend: {},
   },

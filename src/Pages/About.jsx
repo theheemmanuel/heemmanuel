@@ -7,7 +7,7 @@ const About = () => {
         <AnimateOnScroll duration={2} delay={0} animation="flipIn">
           <div className="flex gap-6 flex-col-reverse lg:flex-row">
             <div className="">
-              <h1 className="font-bold text-black dark:text-white font-andika sm:text-4xl text-2xl">
+              <h1 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
                 I am Toyin Makun, a Software Developer and I live in Abuja,
                 Nigeria.
               </h1>
@@ -29,7 +29,7 @@ const About = () => {
                 projects that both inspire and benefit fellow developers.
               </p>
               <div className="my-4">
-                <h3 className="font-bold font-andika text-2xl text-black dark:text-white">
+                <h3 className="font-bold font-viga text-2xl text-black dark:text-white">
                   Soft Skills
                 </h3>
                 <p>
@@ -82,7 +82,7 @@ const About = () => {
                 </ul>
               </div>
               <div className="mt-8">
-                <h3 className="font-bold font-andika text-2xl text-black dark:text-white">
+                <h3 className="font-bold font-viga text-2xl text-black dark:text-white">
                   Usage
                 </h3>
                 <p>
@@ -90,7 +90,7 @@ const About = () => {
                   to.
                 </p>
 
-                <h3 className="font-bold mt-4 font-andika text-xl text-black dark:text-white">
+                <h3 className="font-bold mt-4 font-viga text-xl text-black dark:text-white">
                   Tools
                 </h3>
                 <ul>
@@ -126,7 +126,7 @@ const About = () => {
                   </li>
                 </ul>
 
-                <h3 className="font-bold mt-8 font-andika text-xl text-black dark:text-white">
+                <h3 className="font-bold mt-8 font-viga text-xl text-black dark:text-white">
                   Technologies
                 </h3>
                 <ul>
