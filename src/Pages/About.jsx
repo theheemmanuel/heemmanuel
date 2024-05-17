@@ -1,6 +1,10 @@
 import pic from "../assets/me.jpg";
 import { AnimateOnScroll } from "animate-on-scroll-framer";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    document.title = "My Profile";
+  }, []);
   return (
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <div>

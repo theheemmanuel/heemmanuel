@@ -1,5 +1,12 @@
 import { AnimateOnScroll } from "animate-on-scroll-framer";
+import { Link } from "react-router-dom";
+import project from "../Pages/AllProject.json";
+import { useEffect } from "react";
+
 const Projects = () => {
+  useEffect(() => {
+    document.title = "My Projects";
+  }, []);
   return (
     <div className="max-wid  font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <AnimateOnScroll duration={2} delay={0} animation="flipIn">
@@ -12,79 +19,17 @@ const Projects = () => {
             few of the projects I have worked on.
           </p>
         </div>
-        <div className="pb-24 pt-12 grid md:grid-cols-2 grid-cols-1 gap-6">
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
-          <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl">
-            <img src="" alt="" />
-            <div>
-              <h3 className="font-semibold text-black dark:text-white text-xl">
-                Trafalgal
-              </h3>
-              <p>Healthcare Landing Page</p>
-            </div>
-          </div>
+        <div className="grid grid-cols-2 gap-4">
+          {project.map((pro) => (
+            <Link to={`/projects/${pro.title}`} key={pro.id}>
+              <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-xl">
+                <h3 className="font-semibold text-black dark:text-white text-xl">
+                  {pro.title}
+                </h3>
+                <p>{pro.subtitle}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </AnimateOnScroll>
     </div>

@@ -7,7 +7,7 @@ import Projects from "./Pages/Projects.jsx";
 import Photos from "./Pages/Photos.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Errorpage from "./Pages/Errorpage.jsx";
-// import Toast from "./Pages/Toast.jsx";
+import Page from "./Pages/Page.jsx";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -21,6 +21,7 @@ const App = () => {
         { path: "/projects", element: <Projects /> },
         { path: "/contact", element: <Contact /> },
         { path: "/photos", element: <Photos /> },
+        { path: "/projects/:ID", element: <Page /> },
       ],
     },
   ]);

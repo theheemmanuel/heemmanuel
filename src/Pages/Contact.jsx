@@ -5,7 +5,7 @@ import { IoCall } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { useState } from "react";
+import { useEffect } from "react";
 const Contact = () => {
   // const [loading, setloading] = useState(false);
   const sendemail = (e) => {
@@ -39,6 +39,9 @@ const Contact = () => {
         });
       });
   };
+  useEffect(() => {
+    document.title = "Contact Me";
+  }, []);
   return (
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <AnimateOnScroll duration={2} delay={0} animation="flipIn">
