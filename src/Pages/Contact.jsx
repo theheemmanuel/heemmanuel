@@ -3,7 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, Zoom, toast } from "react-toastify";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useEffect } from "react";
 const Contact = () => {
@@ -46,7 +46,7 @@ const Contact = () => {
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <AnimateOnScroll duration={2} delay={0} animation="flipIn">
         <div>
-          <ToastContainer transition={Zoom} position="bottom-center" />
+          <ToastContainer transition={Bounce} position="bottom-center" />
           <div>
             <h3 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
               Get in Touch
