@@ -8,7 +8,12 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <AnimateOnScroll duration={2} delay={0} animation="flipIn">
+      <AnimateOnScroll
+        duration={2}
+        delay={0}
+        animation="flipIn"
+        className="lg:px-20"
+      >
         <Hero />
         <Experience />
       </AnimateOnScroll>

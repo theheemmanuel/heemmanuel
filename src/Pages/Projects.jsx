@@ -1,7 +1,7 @@
 import { AnimateOnScroll } from "animate-on-scroll-framer";
 import { Link } from "react-router-dom";
-import project from "../Pages/AllProject.json";
 import { useEffect } from "react";
+import Allprojects from "./AllProject";
 
 const Projects = () => {
   useEffect(() => {
@@ -9,7 +9,12 @@ const Projects = () => {
   }, []);
   return (
     <div className="max-wid  font-inter py-12 text-zinc-600 dark:text-zinc-400">
-      <AnimateOnScroll duration={2} delay={0} animation="flipIn">
+      <AnimateOnScroll
+        duration={2}
+        delay={0}
+        animation="flipIn"
+        className="lg:px-20"
+      >
         <div>
           <h3 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
             Projects
@@ -19,14 +24,19 @@ const Projects = () => {
             few of the projects I have worked on.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          {project.map((pro) => (
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8">
+          {Allprojects.map((pro) => (
             <Link to={`/projects/${pro.title}`} key={pro.id}>
-              <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-xl">
-                <h3 className="font-semibold text-black dark:text-white text-xl">
-                  {pro.title}
-                </h3>
-                <p>{pro.subtitle}</p>
+              <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-md flex">
+                <div className="w-16">
+                  <img src={pro.image} alt="" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-black dark:text-white text-xl">
+                    {pro.title}
+                  </h3>
+                  <p>{pro.subtitle}</p>
+                </div>
               </div>
             </Link>
           ))}

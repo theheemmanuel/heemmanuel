@@ -8,11 +8,16 @@ const About = () => {
   return (
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
       <div>
-        <AnimateOnScroll duration={2} delay={0} animation="flipIn">
+        <AnimateOnScroll
+          duration={2}
+          delay={0}
+          animation="flipIn"
+          className="lg:px-20"
+        >
           <div className="flex gap-6 flex-col-reverse lg:flex-row">
             <div className="">
               <h1 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
-                I am Toyin Makun, a Software Developer and I live in Abuja,
+                I am Emmanuel Oladiran, a Software Developer and I live in
                 Nigeria.
               </h1>
               <p className="my-6">
@@ -44,6 +49,12 @@ const About = () => {
                   <li className="py-2">
                     <span className="font-semibold">Attention to Detail:</span>{" "}
                     I derive satisfaction from crafting meticulous designs and
+                    user interfaces, placing a strong emphasis on quality to
+                    ensure a polished end product.
+                  </li>
+                  <li className="py-2">
+                    <span className="font-semibold">Critical Thinking:</span> I
+                    derive satisfaction from crafting meticulous designs and
                     user interfaces, placing a strong emphasis on quality to
                     ensure a polished end product.
                   </li>
@@ -99,31 +110,31 @@ const About = () => {
                 </h3>
                 <ul>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Visual Studio Code:
                     </a>{" "}
                     Text Editor
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Google Chrome:
                     </a>{" "}
                     Web Browser
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Microsoft Edge:
                     </a>{" "}
                     Web Browser
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Git Bash
                     </a>{" "}
                     Git Terminal
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Figma:
                     </a>{" "}
                     Design Tool
@@ -135,31 +146,31 @@ const About = () => {
                 </h3>
                 <ul>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       React:
                     </a>{" "}
                     Javascript Framework
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Javascript:
                     </a>{" "}
                     Programming Language
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Tailwind CSS:
                     </a>{" "}
                     Styling Library
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Bootstrap
                     </a>{" "}
                     Styling Library
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500 underline" href="">
+                    <a className="text-blue-500" href="">
                       Git
                     </a>{" "}
                     Version Control

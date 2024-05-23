@@ -7,7 +7,7 @@ import {
 } from "../Pages/Icons";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  const [darker, setdark] = useState(true);
+  const [darker, setdark] = useState(false);
   const [showmenu, setshowmenu] = useState(false);
   const changtheme = () => {
     document.documentElement.classList.toggle("dark");

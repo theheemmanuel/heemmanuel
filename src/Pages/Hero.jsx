@@ -21,34 +21,37 @@ const Hero = () => {
             the online world...
           </p>
           <div className="font-[monospace] flex gap-4 flex-wrap text-lg">
-            {" "}
             <a
               className="flex items-center border-zinc-500 gap-1 border-b"
-              href=""
+              href="mailto:oladirane@gmail.com"
             >
               <FaEnvelope /> <p>Email</p>
             </a>
             <a
+              target="blank"
               className="flex items-center border-zinc-500 gap-1 border-b"
-              href=""
+              href="https://github.com/theheemmanuel"
             >
               <FaGithub /> <p>Github</p>
             </a>
             <a
+              target="blank"
               className="flex items-center border-zinc-500 gap-1 border-b"
-              href=""
+              href="https://www.linkedin.com/in/heemmanuel/"
             >
               <FaLinkedinIn /> <p>LinkedIn</p>
             </a>
             <a
+              target="blank"
               className="flex items-center border-zinc-500 gap-1 border-b"
-              href=""
+              href="https://www.x.com/the_heemmanuel/"
             >
               <FaTwitter /> <p>Twitter</p>
             </a>
             <a
+              target="blank"
               className="flex items-center border-zinc-500 gap-1 border-b"
-              href=""
+              href="https://www.instagram.com/the_heemmanuel/"
             >
               <FaInstagram /> <p>Instagram</p>
             </a>

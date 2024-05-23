@@ -44,7 +44,12 @@ const Contact = () => {
   }, []);
   return (
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
-      <AnimateOnScroll duration={2} delay={0} animation="flipIn">
+      <AnimateOnScroll
+        duration={2}
+        delay={0}
+        animation="flipIn"
+        className="lg:px-20"
+      >
         <div>
           <ToastContainer transition={Bounce} position="bottom-center" />
           <div>
@@ -73,7 +78,9 @@ const Contact = () => {
                   <IoMdMail size={40} />
                   Email
                 </h3>
-                <p className="text-lg text-blue-500">oladirane@gmail.com</p>
+                <a href="mailto:oladirane@gmail.com">
+                  <p className="text-lg text-blue-500">oladirane@gmail.com</p>
+                </a>
               </div>
               <div className="my-8">
                 <h3 className="flex items-center gap-2 text-xl font-semibold">
