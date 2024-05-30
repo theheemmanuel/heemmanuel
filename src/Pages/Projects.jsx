@@ -27,7 +27,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8">
           {Allprojects.map((pro) => (
             <Link to={`/projects/${pro.title}`} key={pro.id}>
-              <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-md flex">
+              <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-md flex gap-2">
                 <div className="w-16">
                   <img src={pro.image} alt="" />
                 </div>
