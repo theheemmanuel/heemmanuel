@@ -8,6 +8,11 @@ export default {
       viga: ["Viga"],
     },
     extend: {},
+    transitionDuration: {
+      50: "50ms",
+      75: "75ms",
+      100: "100ms",
+    },
   },
   plugins: [],
   darkMode: "class",

@@ -8,9 +8,7 @@ import {
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   useEffect(() => {
-    // Check localStorage for the theme preference on component mount
-    const savedTheme = localStorage.getItem("theme");
-    console.log(savedTheme);
+    const savedTheme = localStorage.getItem("mode");
     if (savedTheme === "dark") {
       setdark(true);
       document.documentElement.classList.add("dark");
@@ -19,19 +17,15 @@ const Navbar = () => {
       document.documentElement.classList.remove("dark");
     }
   }, []);
-  const [darker, setdark] = useState(false);
+  const [darker, setdark] = useState();
   const [showmenu, setshowmenu] = useState(false);
-  // const changtheme = () => {
-  //   document.documentElement.classList.toggle("dark");
-  //   setdark(!darker);
-  // };
   const toggleDarkMode = () => {
     if (!darker) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem("mode", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("mode", "light");
     }
 
     setdark(!darker);
