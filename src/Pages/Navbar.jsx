@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   CgDarkMode,
   MdOutlineLightMode,
@@ -7,10 +7,33 @@ import {
 } from "../Pages/Icons";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  useEffect(() => {
+    // Check localStorage for the theme preference on component mount
+    const savedTheme = localStorage.getItem("theme");
+    console.log(savedTheme);
+    if (savedTheme === "dark") {
+      setdark(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setdark(false);
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
   const [darker, setdark] = useState(false);
   const [showmenu, setshowmenu] = useState(false);
-  const changtheme = () => {
-    document.documentElement.classList.toggle("dark");
+  // const changtheme = () => {
+  //   document.documentElement.classList.toggle("dark");
+  //   setdark(!darker);
+  // };
+  const toggleDarkMode = () => {
+    if (!darker) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+
     setdark(!darker);
   };
   const menubar = () => {
@@ -50,18 +73,13 @@ const Navbar = () => {
             >
               Contact
             </NavLink>
-            {/* <NavLink
-              className={({ isActive }) =>
-                isActive ? "border-b-2 border-zinc-500" : ""
-              }
-              to="/photos"
-            >
-              Photos
-            </NavLink> */}
           </ul>
         </div>
         <div className="flex gap-6 items-center">
-          <button className="border-2 p-1 rounded-full" onClick={changtheme}>
+          <button
+            className="border-2 p-1 rounded-full"
+            onClick={toggleDarkMode}
+          >
             {darker ? (
               <CgDarkMode size={30} />
             ) : (
