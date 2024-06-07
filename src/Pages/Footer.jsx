@@ -12,7 +12,7 @@ const Footer = () => {
           <a
             target="_blank"
             className="underline text-blue-500"
-            href="https://victoeke.com"
+            href="https://victoreke.com"
           >
             Victor Eke
           </a>
