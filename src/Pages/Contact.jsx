@@ -51,7 +51,7 @@ const Contact = () => {
         className="lg:px-20"
       >
         <div>
-          <ToastContainer transition={Bounce} position="bottom-center" />
+          <ToastContainer transition={Bounce} position="top-center" />
           <div>
             <h3 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
               Get in Touch
