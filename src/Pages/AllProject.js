@@ -18,12 +18,6 @@ const Allprojects = [
     image: pic1,
     main: GetLinked,
   },
-  {
-    id: 3,
-    title: "SustainaFinance",
-    subtitle: "A Data Nexus",
-    image: pic1,
-  },
 ];
 
 export default Allprojects;

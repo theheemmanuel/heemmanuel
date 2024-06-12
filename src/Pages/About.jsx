@@ -20,24 +20,24 @@ const About = () => {
                 I am Emmanuel Oladiran, a Software Developer and I live in
                 Nigeria.
               </h1>
-              <p className="my-6">
+              <p className="my-4">
                 I am a self-driven, career-oriented software developer
-                specializing in front-end development and open-source, currently
-                pursuing a bachelors degree in computer science. My expertise
-                lies in building interactive web applications on the client
-                side. Primarily working with technologies like JavaScript,
-                Next.js, TypeScript and Python.
+                specializing in front-end development, currently pursuing a
+                bachelors degree in computer science. My expertise lies in
+                building interactive web applications on the client side.
+                Primarily working with technologies like JavaScript, React.JS
+                and TypeScript.
               </p>
-              <p className="my-6">
+              <p className="my-4">
                 I strongly believe in continuous learning and improving myself,
                 so I try my best to learn in any situation possible, unfavorable
                 or not.
               </p>
-              <p className="my-6">
+              <p className="my-4">
                 Beyond learning, I enjoy writing technical articles and creating
                 projects that both inspire and benefit fellow developers.
               </p>
-              <div className="my-4">
+              <div className="my-6">
                 <h3 className="font-bold font-viga text-2xl text-black dark:text-white">
                   Soft Skills
                 </h3>
@@ -47,8 +47,8 @@ const About = () => {
                 </p>
                 <ul>
                   <li className="py-2">
-                    <span className="font-semibold">Attention to Detail:</span>{" "}
-                    I derive satisfaction from crafting meticulous designs and
+                    <span className="font-semibold">Attention to Detail:</span>I
+                    derive satisfaction from crafting meticulous designs and
                     user interfaces, placing a strong emphasis on quality to
                     ensure a polished end product.
                   </li>
@@ -162,6 +162,12 @@ const About = () => {
                       Tailwind CSS:
                     </a>{" "}
                     Styling Library
+                  </li>
+                  <li className="my-4 font-semibold">
+                    <a className="text-blue-500" href="">
+                      SASS/SCSS:
+                    </a>{" "}
+                    CSS Pre-processor
                   </li>
                   <li className="my-4 font-semibold">
                     <a className="text-blue-500" href="">

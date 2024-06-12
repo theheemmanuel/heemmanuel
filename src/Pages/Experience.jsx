@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import etc from "../assets/blueLogo.png";
+import sus from "../assets/logo2.png";
 const Experience = () => {
   const WorkEXP = [
     {
@@ -14,13 +15,13 @@ const Experience = () => {
     },
     {
       id: 2,
-      company: "ETC Vibes",
-      link: "https://google.com",
-      started: "Jan 2014",
+      company: "SustainaFinance Data Nexus",
+      link: "http://sustaina-finance-esg.vercel.app",
+      started: "Feb 2004",
       ended: "Present",
-      role: "Product Manager Intern",
-      img: etc,
-      work: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi tempora? Officiis dolor voluptas porro nesciunt, vitae rerum nobis enim.",
+      role: "Project Manager",
+      img: sus,
+      work: "As the project manager, I lead the project, guilding developers on tasks and objectives, tracking progress and addressing issues to ensure successful project delivery.",
     },
     {
       id: 3,
@@ -85,7 +86,10 @@ export function Workings({ img, link, started, ended, company, role, work }) {
         </a>
         <h3 className="font-semibold">{role}</h3>
         <h3 className="font-semibold pt-2">
-          {started} - <span className="text-green-500">{ended}</span>
+          {started} -{" "}
+          <span className={ended === "Present" ? "text-green-500" : ""}>
+            {ended}
+          </span>
         </h3>
         <p className="py-4">{work}</p>
       </div>
