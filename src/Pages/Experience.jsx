@@ -26,7 +26,6 @@ const Experience = () => {
     {
       id: 3,
       company: "ETC Vibes",
-      link: "https://google.com",
       started: "Jan 2014",
       ended: "Present",
       role: "Product Manager Intern",
@@ -36,7 +35,7 @@ const Experience = () => {
     {
       id: 4,
       company: "ETC Vibes",
-      link: "https://google.com",
+      link: "https://etcvibes.com",
       started: "Jan 2014",
       ended: "Present",
       role: "Product Manager Intern",
