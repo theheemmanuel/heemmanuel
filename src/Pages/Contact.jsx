@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-1 mb-4">
                   <label htmlFor="">Message</label>
                   <textarea
-                    className="bg-transparent h-[300px] border-2 p-2 rounded-lg"
+                    className="bg-transparent h-[100px] border-2 p-2 rounded-lg"
                     required
                     name="message"
                     type="text"
