@@ -1,6 +1,34 @@
+/* eslint-disable react/no-unescaped-entities */
 import pic from "../assets/me.jpg";
 import { AnimateOnScroll } from "animate-on-scroll-framer";
 import { useEffect } from "react";
+const softSkills = [
+  {
+    head: "Meticulous Design Aesthetics: ",
+    body: "I am very particular in designing and aesthetics, ensuring that the design of the layout, the flows, and spacing are very clean and interesting to the eye and brains.",
+  },
+  {
+    head: "Strategic Analytical Thinking: ",
+    body: "I pride myself in strategic thinking where I am able to look at issues from different perspectives, and use my intellect to come up with efficient solutions to challenging issues.",
+  },
+  {
+    head: "Self-Driven and Diligent: ",
+    body: "I possess a good work ethic and fully embrace the call to duty, and therefore love working on projects and delivering them on my own without much supervision or showing frequent impulsive tendencies as to whether or not the project will get completed on time.",
+  },
+  {
+    head: "Clear and Concise Communicator: ",
+    body: "I know that good communication is a key factor that should be used in proper functioning of cooperation. Due to my effective communication skills, I am able to effectively communicate the ideas and expectations with other members interested in the project, hence improving teamwork and strategic alignment.",
+  },
+  {
+    head: "Collaborative Teamwork Spirit: ",
+    body: "Though in single-player focused games, I personally am a firm believer of teamwork. I also take part in several team projects, thus creating awareness and encouraging the adoption of various stances to something that benefits everyone.",
+  },
+  {
+    head: "Continuous Learning Mindset: ",
+    body: "As we know that death occurs only for organisms, but in the world of technology, it emerges with new aspects and opportunities, so I am highly motivated and always ready to learn something new. The passion for continuing education guarantees that I am not out-of-date with the current industry trends and available technologies.",
+  },
+];
+
 const About = () => {
   useEffect(() => {
     document.title = "My Profile";
@@ -21,22 +49,25 @@ const About = () => {
                 Nigeria.
               </h1>
               <p className="my-4">
-                I am a self-driven, career-oriented software developer
-                specializing in front-end development, currently pursuing a
-                bachelors degree in computer science. My expertise lies in
-                building interactive web applications on the client side.
-                Primarily working with technologies like JavaScript, React.JS
-                and TypeScript.
+                I am a passionate software developer and I thrive in the realm
+                of front-end development by crafting interactive and engaging
+                web applications. With a strong foundation in Computer Science,
+                which I am currently pursuing through my Bachelor's degree. I
+                specialize in bringing digital experiences to life on the client
+                side. My expertise lies in leveraging cutting-edge technologies
+                such as JavaScript, React.JS, and TypeScript to create seamless
+                and intuitive user interfaces.
               </p>
               <p className="my-4">
-                I strongly believe in continuous learning and improving myself,
-                so I try my best to learn in any situation possible, unfavorable
-                or not.
+                My believe is that growth and continuous learning are essential
+                for professional success. Embracing this mindset, I actively
+                seek out opportunities to expand my knowledge and skills,
+                regardless of the circumstances, whether faced with favorable or
+                challenging situations, I approach each experience as a chance
+                to learn and evolve, ensuring that I remain at the forefront of
+                industry advancements.
               </p>
-              <p className="my-4">
-                Beyond learning, I enjoy writing technical articles and creating
-                projects that both inspire and benefit fellow developers.
-              </p>
+
               <div className="my-6">
                 <h3 className="font-bold font-viga text-2xl text-black dark:text-white">
                   Soft Skills
@@ -46,54 +77,12 @@ const About = () => {
                   mentioning:
                 </p>
                 <ul>
-                  <li className="py-2">
-                    <span className="font-semibold">Attention to Detail:</span>I
-                    derive satisfaction from crafting meticulous designs and
-                    user interfaces, placing a strong emphasis on quality to
-                    ensure a polished end product.
-                  </li>
-                  <li className="py-2">
-                    <span className="font-semibold">Critical Thinking:</span> I
-                    derive satisfaction from crafting meticulous designs and
-                    user interfaces, placing a strong emphasis on quality to
-                    ensure a polished end product.
-                  </li>
-                  <li className="py-2">
-                    <span className="font-semibold">
-                      Self motivated & Independent:
-                    </span>{" "}
-                    Recognizing the value of time and efficiency, I excel in
-                    delivering assignments and projects with minimal
-                    supervision. My proactive approach allows you the freedom to
-                    trust in the quality and timeliness of my work, eliminating
-                    the need for constant oversight.
-                  </li>
-                  <li className="py-2">
-                    <span className="font-semibold">
-                      Collaboration Advocate:
-                    </span>{" "}
-                    Beyond individual excellence, I believe in the power of
-                    collaboration. Whether it is contributing to a team project
-                    or fostering a sense of community, I bring a collaborative
-                    spirit that enhances the collective success of any endeavor.
-                  </li>
-                  <li className="py-2">
-                    <span className="font-semibold">Continous Learner:</span> In
-                    the ever-evolving landscape of technology, I am committed to
-                    continuous learning. Staying abreast of the latest industry
-                    trends and technologies ensures that my skills remain
-                    cutting-edge, contributing to the overall success of the
-                    projects I undertake.
-                  </li>
-                  <li className="py-2">
-                    <span className="font-semibold">
-                      Effective Communication:
-                    </span>{" "}
-                    Clear and concise communication is integral to project
-                    success. I possess strong communication skills, facilitating
-                    smooth collaboration with team members and stakeholders,
-                    ensuring everyone is on the same page.
-                  </li>
+                  {softSkills.map((each) => (
+                    <li key={each.head} className="py-2">
+                      <span className="font-semibold">{each.head}</span>
+                      {each.body}
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="mt-8">
@@ -110,31 +99,51 @@ const About = () => {
                 </h3>
                 <ul>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://code.visualstudio.com/"
+                    >
                       Visual Studio Code:
                     </a>{" "}
                     Text Editor
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://www.google.com/chrome/"
+                    >
                       Google Chrome:
                     </a>{" "}
                     Web Browser
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://www.microsoft.com/en-us/edge"
+                    >
                       Microsoft Edge:
                     </a>{" "}
                     Web Browser
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://git-scm.com/"
+                    >
                       Git Bash
                     </a>{" "}
                     Git Terminal
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://www.figma.com/"
+                    >
                       Figma:
                     </a>{" "}
                     Design Tool
@@ -146,38 +155,62 @@ const About = () => {
                 </h3>
                 <ul>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://react.dev/"
+                    >
                       React:
                     </a>{" "}
                     Javascript Framework
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://www.javascript.com/"
+                    >
                       Javascript:
                     </a>{" "}
                     Programming Language
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://tailwindcss.com/"
+                    >
                       Tailwind CSS:
                     </a>{" "}
                     Styling Library
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://sass-lang.com/"
+                    >
                       SASS/SCSS:
                     </a>{" "}
                     CSS Pre-processor
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://getbootstrap.com/"
+                    >
                       Bootstrap
                     </a>{" "}
                     Styling Library
                   </li>
                   <li className="my-4 font-semibold">
-                    <a className="text-blue-500" href="">
-                      Git
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://github.com/"
+                    >
+                      Github
                     </a>{" "}
                     Version Control
                   </li>

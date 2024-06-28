@@ -103,9 +103,6 @@ const Navbar = () => {
             <NavLink onClick={() => setshowmenu(!showmenu)} to="contact">
               Contact
             </NavLink>
-            {/* <NavLink onClick={() => setshowmenu(!showmenu)} to="photos">
-              Photos
-            </NavLink>  */}
           </ul>
         </div>
       </div>
