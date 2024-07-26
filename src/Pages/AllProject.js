@@ -2,6 +2,8 @@ import pic1 from "../assets/blueLogo.png";
 import pic2 from "../assets/Annotation 2024-05-27 105818.png";
 import Trafalgar from "../assets/Trafalgar.jpg";
 import GetLinked from "../assets/GetLinked.jpg";
+import ENC from "../assets/ENCLINKS.png";
+import ENCdetails from "../assets/ENC.png";
 
 const Allprojects = [
   {
@@ -17,6 +19,13 @@ const Allprojects = [
     subtitle: "I participated in an Hackathon",
     image: pic1,
     main: GetLinked,
+  },
+  {
+    id: 3,
+    title: "ENCLINKS Tech",
+    subtitle: "I developed the landing page",
+    image: ENC,
+    main: ENCdetails,
   },
 ];
 

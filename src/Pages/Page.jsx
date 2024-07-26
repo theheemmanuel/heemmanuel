@@ -1,10 +1,14 @@
 import { useParams } from "react-router-dom";
 import Allprojects from "./AllProject";
+import { useEffect } from "react";
 
 const Page = () => {
   const { ID } = useParams();
   const page = Allprojects.find((project) => project.title === ID);
   // console.log(page);
+  useEffect(() => {
+    document.title = page.title;
+  }, []);
   return (
     <div className="max-w-[768px] mx-auto px-4">
       <div className="flex justify-between py-8">
