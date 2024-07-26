@@ -73,6 +73,7 @@ export function Workings({ img, link, started, ended, company, role, work }) {
     <div className="flex gap-4 font-inter">
       <div className="flex flex-col items-center">
         <img
+          loading="lazy"
           className="min-w-[80px] h-[80px] border-2 p-1 dark:border-zinc-500 rounded-lg"
           src={img}
           alt="company logo"

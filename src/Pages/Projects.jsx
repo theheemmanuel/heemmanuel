@@ -29,7 +29,12 @@ const Projects = () => {
             <Link to={`/projects/${pro.title}`} key={pro.id}>
               <div className="dark:bg-black bg-zinc-50 p-6 rounded-2xl shadow-md flex gap-2">
                 <div className="w-16">
-                  <img className="h-full" src={pro.image} alt="" />
+                  <img
+                    loading="lazy"
+                    className="h-full"
+                    src={pro.image}
+                    alt=""
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold text-black dark:text-white text-xl font-viga">

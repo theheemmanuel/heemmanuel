@@ -18,6 +18,7 @@ const Page = () => {
         </a>
       </div>
       <img
+        loading="lazy"
         width={"100%"}
         className="py-2"
         height={"100px"}
