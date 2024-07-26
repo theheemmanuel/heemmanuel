@@ -16,16 +16,17 @@ const Allprojects = [
   {
     id: 2,
     title: "GetLinked",
-    subtitle: "I participated in an Hackathon",
+    subtitle: "A project for an Hackathon",
     image: pic1,
     main: GetLinked,
   },
   {
     id: 3,
     title: "ENCLINKS Tech",
-    subtitle: "I developed the landing page",
+    subtitle: "Developed a landing page",
     image: ENC,
     main: ENCdetails,
+    link: "https://enclinks.com",
   },
 ];
 
