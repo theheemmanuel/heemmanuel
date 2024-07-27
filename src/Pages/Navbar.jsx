@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import {
   CgDarkMode,
   MdOutlineLightMode,
@@ -7,7 +7,7 @@ import {
 } from "../Pages/Icons";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedTheme = localStorage.getItem("mode");
     if (savedTheme === "dark") {
       setdark(true);

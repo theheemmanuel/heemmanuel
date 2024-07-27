@@ -17,7 +17,7 @@ const Allprojects = [
   {
     id: 2,
     title: "GetLinked",
-    subtitle: "A project for an Hackathon",
+    subtitle: "An Hackathon Project",
     image: Get,
     main: GetLinked,
     link: "https://linkedget.netlify.app",
@@ -25,7 +25,7 @@ const Allprojects = [
   {
     id: 3,
     title: "ENCLINKS Tech",
-    subtitle: "tech company landing page",
+    subtitle: "Tech Company Landing page",
     image: ENC,
     main: ENCdetails,
     link: "https://enclinks.com",

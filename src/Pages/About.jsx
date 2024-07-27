@@ -42,7 +42,7 @@ const About = () => {
           animation="flipIn"
           className="lg:px-20"
         >
-          <div className="flex gap-6 flex-col-reverse lg:flex-row">
+          <div className="flex gap-6 flex-col-reverse md:flex-row">
             <div className="">
               <h1 className="font-bold text-black dark:text-white font-viga sm:text-4xl text-2xl">
                 I am Emmanuel Oladiran, a Software Developer and I live in
@@ -218,11 +218,19 @@ const About = () => {
               </div>
             </div>
             <div className="flex justify-center min-w-[40%]">
-              <img
-                className="rounded-2xl sticky top-4 object-cover max-h-96"
-                src={pic}
-                alt=""
-              />
+              <div className="text-center">
+                <button className="border-2 py-2 mb-2 w-full rounded-2xl font-bold text-[20px] sticky top-4 hidden md:block">
+                  Download CV
+                </button>
+                <img
+                  className="rounded-2xl object-cover sticky top-20"
+                  src={pic}
+                  alt=""
+                />{" "}
+                <button className="border-2 py-2 mt-2 w-full rounded-2xl font-bold text-[20px] block md:hidden">
+                  Download CV
+                </button>
+              </div>
             </div>
           </div>
           <h3></h3>
