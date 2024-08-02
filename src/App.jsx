@@ -12,7 +12,7 @@ const App = () => {
     {
       path: "/",
       element: <Rootlayout />,
-      errorElement: <Home />,
+      errorElement: <Rootlayout />,
       children: [
         { path: "", element: <Home /> },
         { path: "/about", element: <About /> },

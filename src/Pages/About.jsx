@@ -219,17 +219,29 @@ const About = () => {
             </div>
             <div className="flex justify-center min-w-[40%]">
               <div className="text-center">
-                <button className="border-2 py-2 mb-2 w-full rounded-2xl font-bold text-[20px] sticky top-4 hidden md:block">
-                  Download CV
-                </button>
+                <a
+                  href="/OLADIRAN EMMANUEL copy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="border-2 py-2 mb-2 w-full rounded-2xl font-bold text-[20px] sticky top-4 hidden md:block">
+                    Download CV
+                  </button>
+                </a>
                 <img
                   className="rounded-2xl object-cover sticky top-20"
                   src={pic}
                   alt=""
-                />{" "}
-                <button className="border-2 py-2 mt-2 w-full rounded-2xl font-bold text-[20px] block md:hidden">
-                  Download CV
-                </button>
+                />
+                <a
+                  href="/OLADIRAN EMMANUEL copy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="border-2 py-2 mt-2 w-full rounded-2xl font-bold text-[20px] block md:hidden">
+                    Download CV
+                  </button>
+                </a>
               </div>
             </div>
           </div>
