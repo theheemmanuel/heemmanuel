@@ -7,7 +7,7 @@ const Experience = () => {
       id: 1,
       company: "ETC Vibes",
       link: "https://etcvibes.com",
-      started: "Jan 2014",
+      started: "Jan 2024",
       ended: "Present",
       role: "Software Developer Intern",
       img: etc,
