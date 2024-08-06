@@ -26,12 +26,21 @@ const Projects = () => {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8">
           {Allprojects.map((pro) => (
-            <Link to={`/projects/${pro.title}`} key={pro.id}>
-              <div className="dark:bg-zinc-800 bg-zinc-50 p-6 rounded-2xl shadow-md flex gap-2">
-                <div className="w-16">
+            <Link
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
+              to={`/projects/${pro.title}`}
+              key={pro.id}
+            >
+              <div className="dark:bg-zinc-800 bg-zinc-50 p-6 rounded-2xl shadow-md flex items-center gap-2">
+                <div className="">
                   <img
                     loading="lazy"
-                    className="h-full"
+                    className="w-16 object-contain"
                     src={pro.image}
                     alt=""
                   />

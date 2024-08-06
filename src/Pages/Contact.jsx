@@ -65,7 +65,7 @@ const Contact = () => {
             </p>
           </div>
           <div className="flex md:flex-row flex-col gap-12 pb-24 mt-12">
-            <div className="border-2 dark:bg-black bg-zinc-50 p-6 rounded-xl w-[100%] md:w-[40%]">
+            <div className="dark:bg-zinc-800 bg-zinc-50 shadow-lg p-6 rounded-xl w-[100%] md:w-[40%]">
               <div className="my-8">
                 <h3 className="flex items-center gap-2 text-xl font-semibold">
                   <FaLocationDot size={40} />
@@ -91,12 +91,12 @@ const Contact = () => {
                 <p className="text-lg text-blue-500">+2349138960240</p>
               </div>
             </div>
-            <div className=" md:w-[60%] w-[100%] dark:bg-black bg-zinc-50 border-2 rounded-xl  p-6 ">
+            <div className="md:w-[60%] w-[100%] dark:bg-zinc-800 bg-zinc-50 rounded-xl p-6 shadow-lg">
               <form onSubmit={sendemail}>
                 <div className="flex flex-col gap-1 mb-4">
                   <label htmlFor="">Name</label>
                   <input
-                    className="bg-transparent border-2 rounded-lg p-2"
+                    className="bg-transparent border rounded-lg p-2"
                     required
                     name="from_name"
                     type="text"
@@ -105,7 +105,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-1 mb-4">
                   <label htmlFor="">Email</label>
                   <input
-                    className="bg-transparent border-2 rounded-lg p-2"
+                    className="bg-transparent border rounded-lg p-2"
                     required
                     name="from_email"
                     type="email"
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div className="flex flex-col gap-1 mb-4">
                   <label htmlFor="">Message</label>
                   <textarea
-                    className="bg-transparent h-[100px] border-2 p-2 rounded-lg"
+                    className="bg-transparent h-[100px] border p-2 rounded-lg"
                     required
                     name="message"
                     type="text"

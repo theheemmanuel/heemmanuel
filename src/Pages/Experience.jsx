@@ -50,16 +50,7 @@ const Experience = () => {
       </h1>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 py-10">
         {WorkEXP.map((exp) => (
-          <Workings
-            key={exp.id}
-            img={exp.img}
-            link={exp.link}
-            started={exp.started}
-            ended={exp.ended}
-            company={exp.company}
-            role={exp.role}
-            work={exp.work}
-          />
+          <Workings key={exp} exp={exp} />
         ))}
       </div>
     </div>
@@ -68,30 +59,28 @@ const Experience = () => {
 
 export default Experience;
 
-export function Workings({ img, link, started, ended, company, role, work }) {
+export function Workings({ exp }) {
   return (
     <div className="flex gap-4 font-inter">
       <div className="flex flex-col items-center">
         <img
           loading="lazy"
-          className="min-w-[80px] h-[80px] border-2 p-1 dark:border-zinc-500 rounded-lg"
-          src={img}
+          className="min-w-[60px] border-2 p-1 dark:border-zinc-500 rounded-lg object-contain"
+          src={exp.img}
           alt="company logo"
         />
         <p className="bg-zinc-300 dark:bg-zinc-500 w-[1.5px] h-[150px]"></p>
       </div>
       <div>
-        <a className="text-xl font-bold font-viga" href={link} target="blank">
-          {company}
-        </a>
-        <h3 className="font-semibold">{role}</h3>
+        <h3 className="text-xl font-bold font-viga">{exp.company}</h3>
+        <h3 className="font-semibold">{exp.role}</h3>
         <h3 className="font-semibold pt-2">
-          {started} -{" "}
-          <span className={ended === "Present" ? "text-green-500" : ""}>
-            {ended}
+          {exp.started} -{" "}
+          <span className={exp.ended === "Present" ? "text-green-500" : ""}>
+            {exp.ended}
           </span>
         </h3>
-        <p className="py-4">{work}</p>
+        <p className="py-4">{exp.work}</p>
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ const About = () => {
     document.title = "My Profile";
   }, []);
   return (
-    <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
+    <div className="max-wid font-inter py-6 md:py-12 text-zinc-600 dark:text-zinc-400">
       <div>
         <AnimateOnScroll
           duration={2}
@@ -229,7 +229,7 @@ const About = () => {
                   </button>
                 </a>
                 <img
-                  className="rounded-2xl object-cover sticky top-20"
+                  className="rounded-2xl object-cover md:sticky top-20"
                   src={pic}
                   alt=""
                 />

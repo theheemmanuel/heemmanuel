@@ -37,8 +37,8 @@ const Navbar = () => {
     <>
       <div className="relative font-viga flex items-center justify-between max-wid py-6">
         <NavLink to="/">
-          <div className="font-bold rounded-lg text-xl dark:bg-white bg-black dark:text-black text-white px-[6px]">
-            Emm
+          <div className="font-bold rounded-lg text-xl dark:bg-white bg-gray-600 dark:text-gray-600 text-white px-[6px]">
+            EO
           </div>
         </NavLink>
         <div>
@@ -94,13 +94,31 @@ const Navbar = () => {
                 : "right-[-1000px] fixed"
             }
           >
-            <NavLink onClick={() => setshowmenu(!showmenu)} to="about">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "border-b-2 border-zinc-500" : ""
+              }
+              onClick={() => setshowmenu(!showmenu)}
+              to="about"
+            >
               About
             </NavLink>
-            <NavLink onClick={() => setshowmenu(!showmenu)} to="projects">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "border-b-2 border-zinc-500" : ""
+              }
+              onClick={() => setshowmenu(!showmenu)}
+              to="projects"
+            >
               Projects
             </NavLink>
-            <NavLink onClick={() => setshowmenu(!showmenu)} to="contact">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "border-b-2 border-zinc-500" : ""
+              }
+              onClick={() => setshowmenu(!showmenu)}
+              to="contact"
+            >
               Contact
             </NavLink>
           </ul>
