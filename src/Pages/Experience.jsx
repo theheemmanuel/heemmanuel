@@ -23,25 +23,6 @@ const Experience = () => {
       img: sus,
       work: "As the project manager, I lead the project, guilding developers on tasks and objectives, tracking progress and addressing issues to ensure successful project delivery.",
     },
-    // {
-    //   id: 3,
-    //   company: "ETC Vibes",
-    //   started: "Jan 2014",
-    //   ended: "Present",
-    //   role: "Product Manager Intern",
-    //   img: etc,
-    //   work: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi tempora? Officiis dolor voluptas porro nesciunt, vitae rerum nobis enim.",
-    // },
-    // {
-    //   id: 4,
-    //   company: "ETC Vibes",
-    //   link: "https://etcvibes.com",
-    //   started: "Jan 2014",
-    //   ended: "Present",
-    //   role: "Product Manager Intern",
-    //   img: etc,
-    //   work: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi tempora? Officiis dolor voluptas porro nesciunt, vitae rerum nobis enim.",
-    // },
   ];
   return (
     <div className="max-wid py-12 text-zinc-600 dark:text-zinc-400">
