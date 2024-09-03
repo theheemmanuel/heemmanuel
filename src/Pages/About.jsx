@@ -217,22 +217,18 @@ const About = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center min-w-[40%]">
+            <div className="flex justify-center min-w-[40%] h-fit sticky top-4 ">
               <div className="text-center">
                 <a
                   href="/OLADIRAN EMMANUEL copy.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="border-2 py-2 mb-2 w-full rounded-2xl font-bold text-[20px] sticky top-4 hidden md:block">
+                  <button className="border-2 py-2 mb-2 w-full rounded-2xl font-bold text-[20px] hidden md:block">
                     Download CV
                   </button>
                 </a>
-                <img
-                  className="rounded-2xl object-cover md:sticky top-20"
-                  src={pic}
-                  alt=""
-                />
+                <img className="rounded-2xl object-cover" src={pic} alt="" />
                 <a
                   href="/OLADIRAN EMMANUEL copy.pdf"
                   target="_blank"
