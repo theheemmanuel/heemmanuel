@@ -162,7 +162,17 @@ const About = () => {
                     >
                       React:
                     </a>{" "}
-                    Javascript Framework
+                    Javascript Library
+                  </li>
+                  <li className="my-4 font-semibold">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://nextjs.org/"
+                    >
+                      Next JS:
+                    </a>{" "}
+                    React Framework
                   </li>
                   <li className="my-4 font-semibold">
                     <a
@@ -217,7 +227,7 @@ const About = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center min-w-[40%] h-fit sticky top-4 ">
+            <div className="flex justify-center min-w-[40%] h-fit md:sticky top-4 ">
               <div className="text-center">
                 <a
                   href="/OLADIRAN EMMANUEL copy.pdf"

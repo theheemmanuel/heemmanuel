@@ -28,13 +28,13 @@ const Page = () => {
         alt=""
       />
       <div className="py-6">
-        <h1 className="md:text-3xl text-xl font-viga">Overview</h1>
-        <p className="font-semibold text-lg my-8">{page.overview}</p>
-        <h1 className="md:text-3xl text-xl font-viga mb-6">
+        <h1 className="md:text-3xl text-xl font-viga mb-2">Overview</h1>
+        <p className="text-lg mb-8">{page.overview}</p>
+        <h1 className="md:text-3xl text-xl font-viga mb-2">
           Stacks/Technologies
         </h1>
         {page.tech.map((each) => (
-          <li className="font-semibold" key={each}>
+          <li className="text-lg" key={each}>
             {each}
           </li>
         ))}
