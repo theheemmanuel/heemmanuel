@@ -4,7 +4,7 @@ import { AnimateOnScroll } from "animate-on-scroll-framer";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
-    document.title = "Emmanuel Oladiran - Software Developer";
+    document.title = "Emmanuel Oladiran || Software Developer";
   }, []);
   return (
     <div>

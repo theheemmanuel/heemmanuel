@@ -4,6 +4,8 @@ import GetLinked from "../assets/GetLinked.jpg";
 import Get from "../assets/Get.png";
 import ENC from "../assets/ENCLINKS.png";
 import ENCdetails from "../assets/ENC.png";
+import Jot from "../assets/jot.png";
+import JotDetails from "../assets/Jotmain.png";
 
 const Allprojects = [
   {
@@ -38,6 +40,17 @@ const Allprojects = [
     tech: ["React JS", "Tailwind CSS", "Animate on Scroll", "Hostinger"],
     overview:
       "ENCLINKS is a tech company landing page which talks about the services offered by the company and as well as their past projects. It was developed using React JS, Tailwind CSS for the styling, added Animate on Scroll to add smooth animations and it was hosted on Hostinger.",
+  },
+  {
+    id: 2,
+    title: "JotItDown",
+    subtitle: "A Note Taking App",
+    image: Jot,
+    main: JotDetails,
+    link: "https://fipproject.netlify.app",
+    tech: ["React JS", "Tailwind CSS", "Chakra UI", "Netlify"],
+    overview:
+      "JotItDown is a versatile note-taking application that empowers users to effortlessly create, organize, modify, and remove notes. Built with React JS, this app features a sleek interface styled using Tailwind CSS and enhanced with Chakra UI components. Users can efficiently categorize their notes into custom folders, streamlining organization and accessibility. The application is deployed on Netlify, ensuring reliable and fast access for users across various devices.",
   },
 ];
 

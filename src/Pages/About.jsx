@@ -31,7 +31,7 @@ const softSkills = [
 
 const About = () => {
   useEffect(() => {
-    document.title = "My Profile";
+    document.title = "Emmanuel Oladiran || My Profile";
   }, []);
   return (
     <div className="max-wid font-inter py-6 md:py-12 text-zinc-600 dark:text-zinc-400">
@@ -181,6 +181,16 @@ const About = () => {
                       href="https://www.javascript.com/"
                     >
                       Javascript:
+                    </a>{" "}
+                    Programming Language
+                  </li>
+                  <li className="my-4 font-semibold">
+                    <a
+                      className="text-blue-500"
+                      target="blank"
+                      href="https://www.typescriptlang.org/"
+                    >
+                      Typescript:
                     </a>{" "}
                     Programming Language
                   </li>

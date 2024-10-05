@@ -5,7 +5,7 @@ import Allprojects from "./AllProject";
 
 const Projects = () => {
   useEffect(() => {
-    document.title = "My Projects";
+    document.title = "Emmanuel Oladiran || My Projects";
   }, []);
   return (
     <div className="max-wid  font-inter py-12 text-zinc-600 dark:text-zinc-400">

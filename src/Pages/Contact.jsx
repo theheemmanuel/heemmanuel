@@ -40,7 +40,7 @@ const Contact = () => {
       });
   };
   useEffect(() => {
-    document.title = "Contact Me";
+    document.title = "Emmanuel Oladiran || Contact Me";
   }, []);
   return (
     <div className="max-wid font-inter py-12 text-zinc-600 dark:text-zinc-400">
