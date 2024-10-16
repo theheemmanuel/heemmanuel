@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import etc from "../assets/blueLogo.png";
 import sus from "../assets/logo2.png";
+import saf from "../assets/FlexiSaf.png";
 const Experience = () => {
   const WorkEXP = [
     {
@@ -22,6 +23,16 @@ const Experience = () => {
       role: "Project Manager",
       img: sus,
       work: "As the project manager, I lead the project, guilding developers on tasks and objectives, tracking progress and addressing issues to ensure successful project delivery.",
+    },
+    {
+      id: 3,
+      company: "FlexiSaf Edusoft LTD",
+      link: "https://flexisaf.com/",
+      started: "May 2024",
+      ended: "Oct 2024",
+      role: "Frontend Developer (SIWES)",
+      img: saf,
+      work: "During my exceptional SIWES training experience, I excelled in a structures curriculum with weekly learning objectives, masterfully leveraging provided resources to accelerate my skill development in frontend development as a whole.",
     },
   ];
   return (

@@ -240,7 +240,7 @@ const About = () => {
             <div className="flex justify-center min-w-[40%] h-fit md:sticky top-4 ">
               <div className="text-center">
                 <a
-                  href="/OLADIRAN EMMANUEL copy.pdf"
+                  href="/Emmanuel Oladiran.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -250,7 +250,7 @@ const About = () => {
                 </a>
                 <img className="rounded-2xl object-cover" src={pic} alt="" />
                 <a
-                  href="/OLADIRAN EMMANUEL copy.pdf"
+                  href="/Emmanuel Oladiran.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
