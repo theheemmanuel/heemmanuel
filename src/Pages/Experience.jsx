@@ -19,7 +19,7 @@ const Experience = () => {
       company: "SustainaFinance Data Nexus",
       link: "http://sustaina-finance-esg.vercel.app",
       started: "Feb 2024",
-      ended: "Present",
+      ended: "Dec 2024",
       role: "Project Manager",
       img: sus,
       work: "As the project manager, I lead the project, guilding developers on tasks and objectives, tracking progress and addressing issues to ensure successful project delivery.",
