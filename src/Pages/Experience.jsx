@@ -2,6 +2,7 @@
 import etc from "../assets/blueLogo.png";
 import sus from "../assets/logo2.png";
 import saf from "../assets/FlexiSaf.png";
+import ned from "../assets/ned.jpeg";
 const Experience = () => {
   const WorkEXP = [
     {
@@ -16,6 +17,16 @@ const Experience = () => {
     },
     {
       id: 2,
+      company: "Nedstarcorp Tech. Solutions",
+      link: "https://nedstarcorp.com/",
+      started: "July 2024",
+      ended: "Jan 2025",
+      role: "Frontend Developer",
+      img: ned,
+      work: "Developed and revamped modern web applications across various industries, creating user-friendly interfaces and optimizing functionality to meet client expectations and industry standards.",
+    },
+    {
+      id: 3,
       company: "SustainaFinance Data Nexus",
       link: "http://sustaina-finance-esg.vercel.app",
       started: "Feb 2024",
@@ -25,7 +36,7 @@ const Experience = () => {
       work: "As the project manager, I lead the project, guilding developers on tasks and objectives, tracking progress and addressing issues to ensure successful project delivery.",
     },
     {
-      id: 3,
+      id: 4,
       company: "FlexiSaf Edusoft LTD",
       link: "https://flexisaf.com/",
       started: "May 2024",
