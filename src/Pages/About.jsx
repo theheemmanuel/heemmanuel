@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import pic from "../assets/me.jpg";
+import pic from "../assets/mpic.jpg";
 import { AnimateOnScroll } from "animate-on-scroll-framer";
 import { useEffect } from "react";
 const softSkills = [

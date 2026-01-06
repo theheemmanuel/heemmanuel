@@ -112,6 +112,15 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1 mb-4">
+                  <label htmlFor="">Phone Number</label>
+                  <input
+                    className="bg-transparent border rounded-lg p-2"
+                    required
+                    name="from_phone"
+                    type="tel"
+                  />
+                </div>
+                <div className="flex flex-col gap-1 mb-4">
                   <label htmlFor="">Message</label>
                   <textarea
                     className="bg-transparent h-[100px] border p-2 rounded-lg"

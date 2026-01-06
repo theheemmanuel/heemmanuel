@@ -18,7 +18,7 @@ const Footer = () => {
           <span>🙌</span>
         </h3> */}
         <div className="font-semibold">
-          Copyright &copy; Emmanuel Oladiran 2025 All rights Reserved
+          Copyright &copy; Emmanuel Oladiran 2026 All rights Reserved
         </div>
       </div>
     </div>
