@@ -11,7 +11,7 @@ const Experience = () => {
       link: "https://etcvibes.com",
       started: "Jan 2024",
       ended: "Present",
-      role: "Software Developer Intern",
+      role: "Frontend Developer",
       img: etc,
       work: "Collaborates with a team of developers and designers to create a working software for users and added other functionalities to the web app; Assists senior developers with debugging.",
     },
