@@ -10,7 +10,7 @@ const Experience = () => {
       company: "ETC Vibes",
       link: "https://etcvibes.com",
       started: "Jan 2024",
-      ended: "Present",
+      ended: "Oct. 2025",
       role: "Frontend Developer",
       img: etc,
       work: "Collaborates with a team of developers and designers to create a working software for users and added other functionalities to the web app; Assists senior developers with debugging.",
