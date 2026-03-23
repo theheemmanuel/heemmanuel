@@ -31,7 +31,7 @@ const Allprojects = [
     image: ttlogo,
     main: tt,
     link: "https://4tluxuryhotel.com",
-    tech: ["Next.js", "Tailwind CSS", "Hostinger"],
+    tech: ["Next.js", "Tailwind CSS", "PayStack", "Hostinger"],
     overview:
       "4T Luxury Hotel is a luxury hotel landing page located in Osogbo, Osun State. It showcases their rooms (Standard, VIP, and Executive/Suite), services, amenities, and gallery. Guests can also book rooms and make payments directly on the site. Built with Next.js and Tailwind CSS for styling, and hosted on Hostinger.",
   },
@@ -41,7 +41,7 @@ const Allprojects = [
     subtitle: "Pottery Website",
     image: Art,
     main: ArtDetails,
-    link: "https://artbyfemi.com",
+    link: "https://artbyfemi.netlify.app",
     tech: [
       "React JS",
       "Tailwind CSS",

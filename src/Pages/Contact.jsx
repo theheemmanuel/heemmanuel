@@ -87,8 +87,8 @@ const Contact = () => {
                   <IoCall size={40} />
                   Call
                 </h3>
-                <p className="text-lg text-blue-500">+2347032632513</p>
-                <p className="text-lg text-blue-500">+2349138960240</p>
+                <p className="text-lg text-blue-500">+2347 03263 2513</p>
+                <p className="text-lg text-blue-500">+2349 13896 0240</p>
               </div>
             </div>
             <div className="md:w-[60%] w-[100%] dark:bg-zinc-800 bg-zinc-50 rounded-xl p-6 shadow-lg">
